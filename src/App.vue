@@ -2,6 +2,11 @@
   <div id="app">
     <HeaderVue />
     <SliderVue />
+    <div class="center">
+      <LastArticlesVue/>
+      <SidebarVue/>
+    </div>
+
   </div>
 </template>
 
@@ -11,6 +16,8 @@ import MiComponente from './components/MiComponente.vue';
 import HeaderVue from './components/Header.vue';
 import ColoresComponentes from './components/ColoresComponentes.vue';
 import SliderVue from './components/Slider.vue';
+import SidebarVue from './components/Sidebar.vue';
+import LastArticlesVue from './components/LastArticles.vue';
 
 export default {
   name: 'App',
@@ -19,7 +26,9 @@ export default {
     MiComponente,
     HeaderVue,
     ColoresComponentes,
-    SliderVue
+    SliderVue,
+    SidebarVue,
+    LastArticlesVue
 
   }
 }
@@ -27,5 +36,6 @@ export default {
 
 <style>
 
-@import './assets/css/styles.css'
+@import './assets/css/styles.css';
+
 </style>
